@@ -5,7 +5,7 @@
   # 'mold' is a faster linker for Linux (Darwin 'sold' should work but has issue with YAML https://github.com/bluewhalesystems/sold/pull/15#issuecomment-1670641312)
 , enableMold ? !enableMusl && !enableWasm && pkgs.stdenv.hostPlatform.isLinux
 , enableExtra ? false
-, enableSccache ? true
+, enableSccache ? false
 , enableProtobuf ? true
 , enableOpenssl ? false
 , enableFoundry ? true
